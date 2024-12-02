@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Liên hệ - Neymar Sport</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <h1><a href="https://khanh131.github.io/baicuoimon1/"> <img src="imgs/logo.png" alt=""></a></h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">trang chủ</a></li>
+        <li><a href="#">giày bóng đá</a></li>
+        <li><a href="#">thương hiệu</a></li>
+        <li><a href="#">phụ kiện</a></li>
+		  <li><a href="#">liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="contact-container">
+      <h2>Liên Hệ Với Chúng Tôi</h2>
+      
+      <div class="contact-info">
+        <div class="contact-details">
+          <h3>Thông Tin Liên Hệ</h3>
+          <p><strong>Địa chỉ:</strong> 123 Đường XYZ, Thành phố Hồ Chí Minh, Việt Nam</p>
+          <p><strong>Email:</strong> <a href="mailto:support@neymarsport.com">support@neymarsport.com</a></p>
+          <p><strong>Điện thoại:</strong> +84 123 456 789</p>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Gửi Thắc Mắc hoặc Câu Hỏi</h3>
+          <form action="submit_form.php" method="POST">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Tin nhắn:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" class="cta-button">Gửi</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map Section -->
+      <div class="contact-map">
+        <h3>Vị trí cửa hàng</h3>
+        <div> <a href="https://www.google.com/maps"><img src="imgs/ban do.png" alt="" width="1000
+			"></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Neymar Sport</h3>
+        <p>Giày bóng đá chính hãng cho những cầu thủ đẳng cấp.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Liên kết nhanh</h3>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Liên hệ</h3>
+        <p>Email: <a href="mailto:support@neymarsport.com">support@neymarsport.com</a></p>
+        <p>Điện thoại: +84 123 456 789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Neymar Sport. Tất cả các quyền được bảo lưu.</p>
+    </div>
+  </footer>
+
+  <!-- Add Google Maps Script -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      var location = {lat: 10.762622, lng: 106.660172}; // Vị trí của cửa hàng
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
+
+</body>
+</html>
